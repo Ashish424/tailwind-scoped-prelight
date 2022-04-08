@@ -9,13 +9,13 @@
 ### **Step 1**
 The custom prefix is appended using [stylus](https://github.com/stylus/stylus) which can be installed using npm.
 
-The scoped-preflight.stylus file contains the scoped preflight. Set the desired prefix at top ( default is *tw-cst-pf* ) and run: 
+The scoped-preflight.stylus file restricts the scopes of preflight. Set the desired prefix at top ( default is *tw-cst-pf* ) and run: 
 ```bash
-stylus scoped-preflight.stylus -o preflight.css
+stylus scoped-preflight.stylus -o scoped-preflight.css
 ```
 ### **Step 2**
 
-Copy the contents of prelight.css under base layer in input.css.
+Copy the contents of scoped-preflight.css under base layer in input.css.
 
 ### **Step 3**
 That's it :) Start the tailwind cli: 
